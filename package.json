@@ -1,0 +1,18 @@
+{
+  "name": "instant-dns",
+  "version": "1.0.4",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/architjn/instant-dns.git"
+  },
+  "author": "Archit Jain",
+  "license": "ISC",
+  "dependencies": {
+    "dns-dig": "^1.1.0"
+  }
+}
