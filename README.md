@@ -22,30 +22,25 @@ dns.resolveIp4('example.com').then(ip4 => {
 
 ### Initialize
 
-The module exposes an object with different function which can be called with an
-optional options object:
+The module exposes an object with different function which can be called:
 
 ```js
 var dns = require('instant-dns');
 ```
 
-The options are:
-
-- `host (Optional)` - If not set then will automatically utilize available host for query. Otherwise when an IP of any DNS provider is supplied, then it queries that specific host.
-
-#### `dns.resolveIp4(domainName, {host: '1.1.1.1'})`
+#### `dns.resolveIp4(domainName)`
 
 Takes a string and returns an array of IPv4 addresses associated with the supplied domain if any.
 
-#### `dns.resolveCname(domainName, {host: '1.1.1.1'})`
+#### `dns.resolveCname(domainName)`
 
 Takes a string and returns an array of CNAME Records associated with the supplied domain if any.
 
-#### `dns.resolveMx(domainName, {host: '1.1.1.1'})`
+#### `dns.resolveMx(domainName)`
 
 Takes a string and returns an array of MX Records associated with the supplied domain if any.
 
-#### `dns.resolveTxt(domainName, {host: '1.1.1.1'})`
+#### `dns.resolveTxt(domainName)`
 
 Takes a string and returns an array of TXT Records associated with the supplied domain if any.
 
